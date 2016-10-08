@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+
+  <title>Lat/Long Form</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="latlong.css" />
+<script type="text/javascript" src="validation.js">
+  </script>
+		
+</head>
+
+<body>
+
+<div id="wrapper">
+	<h1>Latitude and Longitude</h1>
+	<p>Enter coordinates to get the Great Circle Distance between two points.<br />
+	Valid latitudes are between 90 and -90.<br />
+	Valid longitudes are between 180 and -180.
+	</p>
+	
+
+<div id="content">	
+	
+	<form action="./latlong.cgi" method="post" name="lat_long" onsubmit="return validateForm(this)">
+	 <fieldset>
+	 <legend>Enter Latitude and Longitude</legend>
+	 <table title="Example of a form">
+	 
+	 <tr>
+	 <td>
+	 <label for="firstlat">First Latitude</label>
+	 </td>
+	 <td>
+		<input type="text" name="First Latitude" id="firstlat" title="First Latitude" />
+	 </td>
+	 </tr>
+	 
+	<tr>
+	<td> 
+	<label for="firstlong">First Longitude</label>
+	</td>
+	<td>
+		<input type="text" name="First Longitude" id="firstlong" title="First Longitude" />
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<label for="secondlat">Second Latitude</label>
+	</td>
+	<td>
+		<input type="text" name="Second Latitude" id="secondlat" title="Second Latitude" />
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<label for="secondlong">Second Longitude</label>
+	</td>
+	<td>
+		<input type="text" name="Second Longitude" id="secondlong" title="Second Longitude" />
+	</td>
+	</tr>
+	
+	<tr>
+	<td>					
+		<input type="button" value="Check Values" onclick="if (validateForm(this.form)) {alert(&quot;Coordinates are valid. Submit.&quot;);}">
+	</td>
+	<td>
+		<input type="submit" class="button" />
+		<input type="reset" class="button" />
+	</td>
+	</tr>	
+	</table>
+	 </fieldset>
+	</form>
+		
+</div>
+</div>
+
+<div id="footer">
+
+		<p>
+			<a href="http://validator.w3.org/check/referer">HTML5</a>
+	
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS3</a>
+		</p>
+	
+</div>
+</body>
+</html>

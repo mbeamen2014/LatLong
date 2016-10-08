@@ -1,0 +1,29 @@
+
+	body {
+		font-family:verdana,arial,sans-serif;
+		font-size:12px;
+		margin: 0;
+	}
+	
+	fieldset {
+		width: 400px;
+	}
+	
+	#wrapper {
+		width:1000px;
+		margin:0px auto;
+		border:1px solid #bbb;
+		padding:10px;
+	}
+	
+	#content {
+		margin-top:10px;
+		padding-bottom:10px;
+	}
+	
+	#footer {
+		margin-left: 50%;
+		margin-right: auto;
+	}
+	
+	
